@@ -1,0 +1,111 @@
+#leyenda {
+    color: #222;
+    font-family: Georgia, Times, serif;
+    font-size: 30px;
+    font-style: italic;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 20px;
+  }
+  
+  #puntos{
+    color: #1984b3;
+    font-family: Georgia, Times, serif;
+    font-size: 23px;
+    font-style: italic;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  #imagencris{
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+  }
+  
+  #creador{
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efecec;
+    color: #333;
+}
+
+/* Contenedor del formulario */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #efecec;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+    margin-bottom: 20px;
+}
+
+/* Preguntas */
+.question {
+    margin-bottom: 20px;
+}
+
+.question label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.question input[type="text"],
+.question textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.question textarea {
+    resize: none;
+}
+
+/* Estilos de opciones (radio y checkbox) */
+.question input[type="radio"] {
+    margin-right: 10px;
+}
+.question input[type="checkbox"] {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.question label.inline {
+    display: inline;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+/* Botón de envío */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #1d4ed8;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+  

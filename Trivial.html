@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="CSST.css">
+</head>
+<body>
+    <h1>Mi Juego de Trivia</h1>
+    <div class="question">Cargando pregunta...</div>
+    <ul class="options"></ul>
+    <button onclick="fetchQuestion()">Siguiente Pregunta</button>
+    <script>
+        function fetchQuestion() {
+            fetch('https://opentdb.com/api.php?amount=1&type=multiple')
+                .then(response => response.json())
+                .then(data => {
+                    const questionData = data.results[0];
+                    
+                    const questionElement = document.querySelector('.question');
+                    const optionsElement = document.querySelector('.options');
+                    
+                    questionElement.innerHTML = questionData.question;
+                    optionsElement.innerHTML = '';
+                    
+                    let answers = [...questionData.incorrect_answers, questionData.correct_answer];
+                    answers.sort(() => Math.random() - 0.5);
+                    
+                    answers.forEach(answer => {
+                        let li = document.createElement('li');
+                        let button = document.createElement('button');
+                        button.innerHTML = answer;
+                        button.onclick = () => {
+                            if (answer === questionData.correct_answer) {
+                                alert('¡Correcto!');
+                            } else {
+                                alert('Incorrecto. La respuesta correcta era: ' + questionData.correct_answer);
+                            }
+                            fetchQuestion();
+                        };
+                        li.appendChild(button);
+                        optionsElement.appendChild(li);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al obtener la pregunta:', error);
+                    alert('Hubo un problema al cargar la pregunta. Inténtalo de nuevo.');
+                });
+        }
+        
+        fetchQuestion();
+    </script>
+        <footer>
+            <p>&copy; Pelayo González</p>
+        </footer>
+</body>
+</html>

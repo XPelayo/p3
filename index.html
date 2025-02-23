@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelayo González</title>
+    <link rel="stylesheet" href="CSS1.css">
+</head>
+<body>
+    <header>
+        <center>
+        <h1 id="leyenda">La historia del mejor jugador del mundo</h1>
+        </center>
+        <nav>
+            <ul id = "puntos">
+                <li><a href="historia.html">Historia</a></li>
+                <br>
+                <li><a href="goles.html">Mejores Goles</a></li>
+                <br>
+                <li><a href="familia.html">Familia</a></li>
+                <br>
+                <li><a href="Trivial.html">Trivial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+      <center>
+      <img id = "imagencris" src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/06/24/16245558914634.jpg" width="500"height="350">
+       </center>
+
+    <!-- 🔹 SECCIÓN DE PUBLICIDAD (SE GENERARÁ AUTOMÁTICAMENTE) -->
+    <section id="publicidad" style="text-align: center; margin: 30px 0;">
+        <h2>Publicidad</h2>
+        <div id="ad-container" style="border: 1px solid #ddd; padding: 20px; max-width: 300px; margin: auto; display: none;">
+            <img id="ad-image" src="" alt="Publicidad" width="150" style="border-radius: 10px;">
+            <h3 id="ad-title"></h3>
+            <p id="ad-price"></p>
+            <a id="ad-link" href="#" target="_blank" style="text-decoration: none; background-color: #007bff; color: white; padding: 10px 15px; border-radius: 5px; display: inline-block;">Ver más</a>
+        </div>
+    </section>
+
+        <h2 id="creador">¿Quien es el creador de esta web?</h2>
+        <p>Soy Pelayo González, estudiante de tercer curso en ICAI y un apasionado del fútbol. Desde siempre, este deporte ha sido una parte fundamental de mi vida, y por eso decidí combinar mi interés por la tecnología con mi afición al fútbol. Como resultado, he creado una web dedicada al que considero el mejor jugador, donde comparto información, análisis y curiosidades sobre su carrera. Me encanta aprender y desarrollar nuevos proyectos, y esta web es una forma de unir dos de mis grandes pasiones. </p>
+    </section>
+
+    <section>        
+          <h2 id="creador">Una vez vista toda la web...</h2>
+          <p>Realiza el siguiente formulario para evaluar si el diseño de la web es eficiente para que el usuario aprenda. </p>
+      </section>
+
+      <div class="container">
+        <form action="index.html" method="post">
+            <div class="question">
+                <label for="pregunta1">1. ¿En que club ha jugado más partidos?</label>
+                <input type="radio" id="equipo1" name="equipo" value="Manchester">
+                <label for="equipo1" class="inline">Manchester United</label>
+                <input type="radio" id="equipo2" name="equipo" value="Juventus">
+                <label for="equipo2" class="inline">Juventus</label>
+                <input type="radio" id="equipo3" name="equipo" value="Real Madrid">
+                <label for="equipo3" class="inline">Real Madrid</label>
+                <input type="radio" id="equipo4" name="equipo" value="Sporting">
+                <label for="equipo4" class="inline">Sporting</label>
+                <input type="radio" id="equipo5" name="equipo" value="Al-Nassr">
+                <label for="equipo5" class="inline">Al-Nassr</label>
+            </div>
+
+            <div class="question">
+                <label for="pregunta2">2. ¿Cuales han sido sus mejores goles?</label>
+                <input type="text" id="pregunta2" name="goles" placeholder="Escribe tu respuesta aquí...">
+            </div>
+
+            <div class="question">
+                <label for="pregunta3">3. Porque razonez abandonó cristiano el Manchester United por segunda vez:</label>
+                <input type="checkbox" id="razon1" name="razon" value="Tensiones">
+                <label for="razon1" class="inline">Tensiones con el club</label>
+                <input type="checkbox" id="razon2" name="razon" value="Familiares">
+                <label for="razon2" class="inline">Razones Familiares</label>
+                <input type="checkbox" id="razon3" name="razon" value="Desafios">
+                <label for="razon3" class="inline">Nuevos Desafios</label>
+                <input type="checkbox" id="razon4" name="razon" value="Económico">
+                <label for="razon4" class="inline">Tema Económico</label>
+                <input type="checkbox" id="razon5" name="razon" value="Ciudad">
+                <label for="razon5" class="inline">Ciudad</label>
+            </div>
+
+            <div class="question">
+                <label for="pregunta1">4. ¿Cuantos hijos tiene?</label>
+                <input type="radio" id="hijos1" name="hijos" value="1">
+                <label for="hijos1" class="inline">1</label>
+                <input type="radio" id="hijos2" name="hijos" value="3">
+                <label for="hijos2" class="inline">3</label>
+                <input type="radio" id="hijos3" name="hijos" value="4">
+                <label for="hijos3" class="inline">4</label>
+                <input type="radio" id="hijos4" name="hijos" value="5">
+                <label for="hijos4" class="inline">5</label>
+                <input type="radio" id="hijos5" name="hijos" value="6">
+                <label for="hijos5" class="inline">6</label>
+            </div>
+
+            <div class="question">
+                <label for="pregunta4">5. Cuéntenos brevemente si ha echado algo en falta en está web:</label>
+                <textarea id="pregunta4" name="descripcion" rows="4" placeholder="Escribe aquí..."></textarea>
+            </div>
+
+            <button type="submit">Enviar respuestas</button>
+        </form>
+    </div>
+
+<!-- 🔹 SCRIPT PARA CARGAR PUBLICIDAD DESDE LA API -->
+    <script>
+        async function cargarPublicidad() {
+            try {
+                const response = await fetch('https://dummyjson.com/products');
+                const data = await response.json();
+                const productos = data.products;
+                const productoAleatorio = productos[Math.floor(Math.random() * productos.length)];
+
+                document.getElementById('ad-image').src = productoAleatorio.thumbnail;
+                document.getElementById('ad-title').textContent = productoAleatorio.title;
+                document.getElementById('ad-price').textContent = `Precio: $${productoAleatorio.price}`;
+                document.getElementById('ad-link').href = productoAleatorio.url || '#';
+
+                document.getElementById('ad-container').style.display = 'block';
+            } catch (error) {
+                console.error('Error al cargar la publicidad:', error);
+            }
+        }
+
+        cargarPublicidad();
+    </script>
+
+
+    <footer>
+        <p>&copy; Pelayo González</p>
+    </footer>
+</body>
+</html>

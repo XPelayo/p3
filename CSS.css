@@ -1,0 +1,120 @@
+#historia {
+    color: #222;
+    font-family: Georgia, Times, serif;
+    font-size: 50px;
+    font-style: italic;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  
+  #pequeño{
+    margin-right: 20px;
+    padding-left: 10px;
+    float: right;
+  }
+  #histpeque{
+    margin-left: 20px;
+    padding-bottom: 80px;
+    font-size: 25px;
+    font-family: Georgia, Times, serif;
+  }
+  #lisboa{
+    margin-left: 20px;
+    padding-right: 10px;
+    float: left;
+  }
+  #histlisboa{
+    margin-right: 20px;
+    padding-bottom: 0px;
+    font-size: 24px;
+    font-family: Georgia, Times, serif;
+  }
+  #manchester{
+    margin-right: 20px;
+    padding-left: 10px;
+    float: right;
+  }
+  #histman{
+    margin-left: 20px;
+    padding-bottom: 80px;
+    font-size: 25px;
+    font-family: Georgia, Times, serif;
+  }
+  #realmadrid{
+    margin-left: 20px;
+    padding-right: 10px;
+    float: left;
+  }
+  #histreal{
+    margin-right: 20px;
+    padding-bottom: 80px;
+    font-size: 22px;
+    font-family: Georgia, Times, serif;
+  }
+  #juve{
+    margin-right: 20px;
+    padding-left: 10px;
+    float: right;
+  }
+  #histjuve{
+    margin-left: 20px;
+    padding-bottom: 80px;
+    font-size: 22px;
+    font-family: Georgia, Times, serif;
+  }
+  #man2{
+    margin-left: 20px;
+    padding-right: 10px;
+    float: left;
+  }
+  #histman2{
+    margin-right: 20px;
+    padding-bottom: 80px;
+    font-size: 22px;
+    font-family: Georgia, Times, serif;
+  }
+  #arabia{
+    margin-right: 20px;
+    padding-left: 10px;
+    float: right;
+  }
+  #histarabia{
+    margin-left: 20px;
+    padding-bottom: 80px;
+    font-size: 22px;
+    font-family: Georgia, Times, serif;
+  }
+    body{
+        background-image: linear-gradient(1800deg,
+      #f0f023 ,#bd2020,#600101,#c52323,#e2e0e0,#d3d1d1 ,hsl(0, 0%, 20%),hsl(0, 0%, 6%),hsl(0, 0%, 21%),#ffffff,#ffffff,#ffffff,#bd2020,#bd2020,#bd2020,#b82e13,#07ad22,#07ad22,#07ad22,hsl(101, 61%, 93%),hsl(0, 0%, 100%),hsl(0, 0%, 100%))
+  }
+
+  #clisbo{
+    background-image: linear-gradient(1800deg,
+        #07ad22,#52ca66,hsl(0, 0%, 100%));
+  }
+  #cman1{
+    background-image: linear-gradient(1800deg,
+        #bd2020,#dd2626,#954928,#954928,#07ad22);
+  }
+  #creal{
+    background-image: linear-gradient(1800deg,
+    hsl(0, 0%, 100%),hsl(0, 62%, 92%),hsl(0, 100%, 90%),#bd2020);
+  }
+  #cjuve{
+    background-image: linear-gradient(1800deg,
+   #2c2c2c,#767676,hsl(0, 0%, 100%));
+  }
+  #cman2{
+    background-image: linear-gradient(1800deg,
+    #bd2020,#801d1d,#323232);
+  }
+  #cara{
+    background-image: linear-gradient(1800deg,
+    #f0f023,#f0f023,#bd2020);
+  }
+
+  

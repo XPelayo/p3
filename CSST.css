@@ -1,0 +1,21 @@
+title{
+    cursor: url('https://cdn-icons-png.flaticon.com/32/1828/1828884.png'), auto;
+}
+body{
+        background:hsl(224, 85%, 63%);
+        font-family: Arial, sans-serif; text-align: center; padding: 20px
+        cursor: url('https://cdn-icons-png.flaticon.com/32/1828/1828884.png'), auto; 
+     }
+     .question { font-size: 20px;  cursor: url('https://cdn-icons-png.flaticon.com/32/1828/1828884.png'), auto;  }
+     .options { list-style: none; padding: 0;border-radius: 5px;  }
+     .options li {  border-radius: 5px;  cursor: url('https://cdn-icons-png.flaticon.com/32/1828/1828884.png'), auto;  }
+     button { 
+        padding: 10px 15px; 
+        font-size: 16px; 
+        cursor: pointer; 
+        border-radius: 10px; 
+        cursor: url('https://cdn-icons-png.flaticon.com/32/1828/1828884.png'), auto; 
+    }
+    footer{
+        cursor: url('https://cdn-icons-png.flaticon.com/32/1828/1828884.png'), auto;
+    }
